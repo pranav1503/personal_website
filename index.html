@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -12,48 +13,44 @@
   <body>
 
       <div class="my-nav">
-
         <div class="my-nav-item">
           <a href="#about">
-            <center><i class="fas fa-user" style="font-size:15px;"></i></center>
-            <center><p style="font-size:10px;">ABOUT</p><center>
+            <center><i class="fas fa-user nav-icon" ></i></center>
+            <center><p class="nav-font" class="nav-font">ABOUT</p><center>
             <hr class="heading-hr" style="">
           </a>
         </div>
-
         <div class="my-nav-item">
           <a href="#services">
-            <center><i class="fas fa-briefcase" style="font-size:15px;"></i></i></center>
-            <center><p style="font-size:10px;">SERVICES</p><center>
+            <center><i class="fas fa-briefcase nav-icon" ></i></i></center>
+            <center><p class="nav-font">SERVICES</p><center>
             <hr class="heading-hr" style="">
           </a>
         </div>
-
         <div class="my-nav-item">
           <a href="#pricing">
-            <center><i class="fas fa-money-check"></i></center>
-            <center><p style="font-size:10px;">PRICING</p><center>
+            <center><i class="fas fa-money-check nav-icon" ></i></center>
+            <center><p class="nav-font">PRICING</p><center>
             <hr class="heading-hr" style="">
           </a>
         </div>
-
       <div class="my-nav-item">
         <a href="#">
-          <center><i class="fas fa-laptop-code"></i></center>
-          <center><p style="font-size:10px;">PROJECTS</p><center>
+          <center><i class="fas fa-laptop-code nav-icon"></i></center>
+          <center><p class="nav-font">PROJECTS</p><center>
           <hr class="heading-hr" style="">
         </a>
       </div>
-
       <div class="my-nav-item">
         <a href="#contact">
-          <center><i class="fas fa-at"></i></center>
-          <center><p style="font-size:10px;">CONTACT</p><center>
+          <center><i class="fas fa-at nav-icon"></i></center>
+          <center><p class="nav-font">CONTACT</p><center>
           <hr class="heading-hr" style="">
         </a>
       </div>
-
     </div>
+
+
 
       <div class="container large_screen">
         <!-- style="background: #31313A;position:absolute;left:-80px;width:80px;border-radius:5px;padding:10px;" -->
@@ -62,7 +59,7 @@
             <div class="" id="user-pic"></div>
             <center><img src="images/user.jpeg" alt="" class="user-profile-pic" style=""><center>
             <div class="cover-text-div">
-              <center><h1 id="name-text" style="">Pranav S</h1></center>
+              <center><h1 id="name-text" style="">Pranav S Nair</h1></center>
               <center><h5 id="designation-text" style="">Web Developer</h5></center>
               <center><p>
                          <a class="social-link" href="#"><i class="fas fa-envelope"></i></a>&nbsp;
@@ -72,9 +69,10 @@
             </div>
             <div class="cover-button-div" style="">
                 <button type="button" class="cover-button-div-left" name="button">DOWNLOAD CV <i class="fas fa-download"></i></button>
-                <button type="button" class="cover-button-div-right" name="button" style="">CONTACT ME <i class="fas fa-chevron-circle-right"></i></button>
+                <button type="button" class="cover-button-div-right" name="button" style="" onclick="window.location.href='#contact'">CONTACT ME <i class="fas fa-chevron-circle-right"></i></button>
             </div>
           </div>
+
           <div class="col-lg-7 contents" style="">
 
             <div class="about content-div" id="about">
@@ -85,17 +83,17 @@
                 </div>
                 <div class="body-data row">
                   <div class="col-lg-6 body-data-text" >
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </h6>
+                    <h6 class="para-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </h6>
                   </div>
                   <div class="me"> </div>
                   <div class="col-lg-6 body-data-text row">
-                    <div class="col-lg-6" style="text-align:left;">
-                          <p class="sub-left">Age.....</p>
+                    <div class="col-6" style="text-align:left;">
+                        <p class="sub-left">Age.....</p>
                         <p class="sub-left">Residence.....</p>
                         <p class="sub-left">Freelance.....</p>
                         <p class="sub-left">Address.....</p>
                     </div>
-                    <div class="col-lg-6" style="text-align:right;">
+                    <div class="col-6 sub-right" style="text-align:right;">
                         <p>24</p>
                         <p>India</p>
                         <p>Available</p>
@@ -113,29 +111,29 @@
                     </div>
                     <hr class="heading-hr" style="">
                     <div class="row">
-                      <div class="col-lg-6">
-                        <center><div style="margin-top: 10px;background:#78CC6D;height:50px;width:50px;border-radius:50%;"><i style="margin-top:15px;font-size:20px;color:white" class="fas fa-code"></i></div></center>
-                        <h4 align="center" style="color:white;margin-top:25px;">Web Development</h4>
-                        <h6 style="text-align:center;color:#9A9A9F;">Modern and responsive website that will help you reach all of your marketing.</h6>
+                      <div class="col-lg-6 services-item">
+                        <center><div class="services-cir-div"><i class="fas fa-code services-icon"></i></div></center>
+                        <h4 align="center" class="services-h4" style="color:white;margin-top:25px;">Web Development</h4>
+                        <h6 class="services-h6" style="text-align:center;color:#9A9A9F;">Modern and responsive website that will help you reach all of your marketing.</h6>
                       </div>
                       <div class="me"> </div>
-                      <div class="col-lg-5">
-                        <center><div style="margin-top: 10px;background:#78CC6D;height:50px;width:50px;border-radius:50%;"><i style="margin-top:15px;font-size:20px;color:white" class="fas fa-code"></i></div></center>
-                        <h4 align="center" style="color:white;margin-top:25px;">Email Designing</h4>
-                        <h6 style="text-align:center;color:#9A9A9F;">Modern and responsive website that will help you reach all of your marketing.</h6>
+                      <div class="col-lg-5 services-item">
+                        <center><div class="services-cir-div"><i class="fas fa-code services-icon"></i></div></center>
+                        <h4 align="center" class="services-h4" style="color:white;margin-top:25px;">Email Designing</h4>
+                        <h6 class="services-h6" style="text-align:center;color:#9A9A9F;">Modern and responsive website that will help you reach all of your marketing.</h6>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-lg-6">
-                        <center><div style="margin-top: 10px;background:#78CC6D;height:50px;width:50px;border-radius:50%;"><i style="margin-top:15px;font-size:20px;color:white" class="fas fa-code"></i></div></center>
-                        <h4 align="center" style="color:white;margin-top:25px;">App Development</h4>
-                        <h6 style="text-align:center;color:#9A9A9F;">Modern and responsive website that will help you reach all of your marketing.</h6>
+                      <div class="col-lg-6 services-item">
+                        <center><div class="services-cir-div"><i class="fas fa-code services-icon"></i></div></center>
+                        <h4 align="center" class="services-h4" style="color:white;margin-top:25px;">App Development</h4>
+                        <h6 class="services-h6" style="text-align:center;color:#9A9A9F;">Modern and responsive website that will help you reach all of your marketing.</h6>
                       </div>
                       <div class="me"> </div>
-                      <div class="col-lg-5">
-                        <center><div style="margin-top: 10px;background:#78CC6D;height:50px;width:50px;border-radius:50%;"><i style="margin-top:15px;font-size:20px;color:white" class="fas fa-code"></i></div></center>
-                        <h4 align="center" style="color:white;margin-top:25px;">Coding</h4>
-                        <h6 style="text-align:center;color:#9A9A9F;">Modern and responsive website that will help you reach all of your marketing.</h6>
+                      <div class="col-lg-5 services-item">
+                        <center><div class="services-cir-div"><i class="fas fa-code services-icon"></i></div></center>
+                        <h4 align="center" class="services-h4" style="color:white;margin-top:25px;">Coding</h4>
+                        <h6 class="services-h6" style="text-align:center;color:#9A9A9F;">Modern and responsive website that will help you reach all of your marketing.</h6>
                       </div>
                     </div>
                   </div>
@@ -150,7 +148,7 @@
                     <hr class="heading-hr" style="">
                     <div class="row">
                       <div class="col-lg-12">
-                        <h6 style="text-align:center;color:#9A9A9F;">No fixed Cost. The cost is purely based on the size of the project. Drop me a message and let's talk.</h6>
+                        <h6 class="para-text" style="text-align:center;color:#9A9A9F;">No fixed Cost. The cost is purely based on the size of the project. Drop me a message and let's talk.</h6>
                       </div>
                     </div>
                   </div>
@@ -163,7 +161,7 @@
                       <h4 class="text">Contact</h4>
                     </div>
                     <hr class="heading-hr" style="">
-                    <div class="row">
+                    <div class="row contact-sub-div">
                       <div class="col-lg-12">
                         <form>
                               <div class="row">
@@ -197,9 +195,7 @@
                 <h4 class="text">Clients</h4>
               </div>
             </div> -->
-            <div class="servies">
 
-            </div>
 
         </div>
       </div>
