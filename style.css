@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
   background-color: #26262D;
 }
@@ -35,7 +38,8 @@ body{
 }
 
 .large_screen{
-  background-color: #2D2D36;
+  background-color: #31313A;
+  /* background-color: #2D2D36; */
   height: 80%;
   overflow: visible;
   margin: auto;
@@ -51,6 +55,7 @@ body{
   -ms-transform: translateY(-3%);
   transform: translateY(-3%);
   border-radius: 5px;
+  box-shadow: 5px 5px 50px -5px  black;
 }
 
 #user-pic{
@@ -227,4 +232,65 @@ body{
   background-color: #78CC6D;
   color: white;
   border-radius: 2px;
+}
+
+.my-nav{
+  width:70px;
+  background:#31313A;
+  padding:10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 60px;
+  left: 120px;
+}
+
+.my-nav-item{
+  color: white;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.my-nav-item  a{
+  text-decoration: none;
+  color: white;
+}
+
+.my-nav-item a:hover{
+  color:#78CC6D;
+}
+
+.content-div{
+  height: 100%;
+  /* background-color: red; */
+}
+
+.sub-content{
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.contents{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+#nameinput,#exampleInputEmail1,#msgInput{
+  background-color: transparent;
+  color: gray;
+}
+
+#nameinput:focus{
+  outline: none;
+  outline-color: red;
+}
+
+.my-button{
+  background-color: none;
+  color: white;
+}
+.my-button:hover{
+  color: gray;
 }
